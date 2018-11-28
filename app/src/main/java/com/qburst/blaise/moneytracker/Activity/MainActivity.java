@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity
     public static int fragment_ID;
     public static final int CATEGORY = 2;
     public static final int TRANSACTION = 1;
+    public static final int SAVINGS=3;
 
     @Override
     protected void onResume() {
@@ -39,6 +40,9 @@ public class MainActivity extends AppCompatActivity
         }
         else if(fragment_ID == TRANSACTION) {
             displayTransaction();
+        }
+        else if(fragment_ID == SAVINGS) {
+            displaySavings();
         }
         super.onResume();
     }
@@ -60,6 +64,10 @@ public class MainActivity extends AppCompatActivity
                 }
                 else if(fragment_ID == TRANSACTION) {
                     Intent intent = new Intent(MainActivity.this, AddTransaction.class);
+                    startActivity(intent);
+                }
+                else if(fragment_ID == SAVINGS) {
+                    Intent intent = new Intent(MainActivity.this,AddSavings.class);
                     startActivity(intent);
                 }
             }

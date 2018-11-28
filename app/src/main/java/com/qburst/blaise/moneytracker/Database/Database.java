@@ -7,6 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
 import com.qburst.blaise.moneytracker.Model.Category;
+import com.qburst.blaise.moneytracker.Model.Savings;
 import com.qburst.blaise.moneytracker.Model.Transaction;
 
 import java.util.ArrayList;
@@ -21,7 +22,8 @@ public class Database extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("create table if not exists category(itemId integer primary key, itemName varchar(20));");
-        db.execSQL("create table if not exists transactions(id integer primary key autoincrement, itemId int,year int, month int, day int, amount int ,foreign key(itemId) references category(itemId));");
+        db.execSQL("create table if not exists transactions(id integer primary key autoincrement, itemId int, year int, month int, day int, amount int , foreign key(itemId) references category(itemId));");
+        db.execSQL("create table if not exists savings(id integer primary key autoincrement, itemId int, amount int, foreign key(itemId) references category(itemId));");
     }
 
     public void insertTransaction(Transaction transaction) {
@@ -103,11 +105,31 @@ public class Database extends SQLiteOpenHelper {
     public Category getCategoryItem(int id) {
         SQLiteDatabase db = getReadableDatabase();
         Cursor cursor = db.rawQuery("select * from category where itemId="+id,null);
-        if(cursor.moveToNext()) {
+        if(cursor.moveToFirst()) {
             return new Category(cursor.getString(cursor.getColumnIndex("itemName")),id,id>0);
         }
         else {
             return null;
         }
+    }
+
+    public void insertSavings(Savings savings) {
+        SQLiteDatabase db = getWritableDatabase();
+        db.execSQL("insert into savings(itemId,amount) values("+savings.getId()+","+savings.getAmount()+")");
+    }
+    public List<Savings> getSavings() {
+        List<Savings> savingsList = new ArrayList<>();
+        SQLiteDatabase db = getReadableDatabase();
+        int id;
+        int amount;
+        Cursor cursor = db.rawQuery("select * from savings",null);
+        if(cursor.moveToFirst()) {
+            id = cursor.getInt(cursor.getColumnIndex("itemId"));
+            amount = cursor.getInt(cursor.getColumnIndex("amount"));
+            Savings savings = new Savings(id, amount);
+            savingsList.add(savings);
+        }
+        cursor.close();
+        return savingsList;
     }
 }

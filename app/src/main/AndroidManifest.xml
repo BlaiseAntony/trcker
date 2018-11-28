@@ -21,6 +21,7 @@
         </activity>
         <activity android:name=".Activity.AddCategory"/>
         <activity android:name=".Activity.AddTransaction" />
+        <activity android:name=".Activity.AddSavings" />
     </application>
 
 </manifest>

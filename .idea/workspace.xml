@@ -6,12 +6,11 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="hi" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Database/Database.java" line="23" mnemonic="0" />
+    <bookmark url="file://$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Database/Database.java" line="24" mnemonic="0" />
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -20,16 +19,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a6a4b39-637c-4884-bdb6-4a6bda78b8aa" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Activity/AddTransaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/add_transaction_activity.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/transaction_item.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Activity/AddSavings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Fragment/Adapter/SavingsRecyclerViewAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Model/Savings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/add_savings_activity.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/savings_fragment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/savings_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Activity/AddTransaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Activity/AddTransaction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Activity/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Activity/MainActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Database/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Database/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Fragment/Adapter/TransactionRecyclerViewAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Fragment/Adapter/TransactionRecyclerViewAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Fragment/TransactionFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Fragment/TransactionFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Model/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Model/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Model/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Fragment/SavingFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Fragment/SavingFragment.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -52,11 +61,57 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AddCategory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Activity/AddCategory.java">
+      <file leaf-file-name="SavingFragment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Fragment/SavingFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+            <state relative-caret-position="-67">
+              <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="savings_fragment.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/savings_fragment.xml">
+          <provider selected="true" editor-type-id="android-designer2">
+            <state />
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddSavings.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Activity/AddSavings.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="181">
+              <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Database.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Database/Database.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add_savings_activity.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/add_savings_activity.xml">
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="343">
+              <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -64,12 +119,10 @@
       <file leaf-file-name="AddTransaction.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Activity/AddTransaction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-258">
-              <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+            <state relative-caret-position="154">
+              <caret line="92" column="5" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3485#3486#0" expanded="true" />
-                <element signature="e#3522#3523#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -81,48 +134,22 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="46" column="19" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
+            <state relative-caret-position="357">
+              <caret line="64" selection-start-line="18" selection-start-column="3" selection-end-line="64" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Database.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Database/Database.java">
+      <file leaf-file-name="SavingsRecyclerViewAdapter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Fragment/Adapter/SavingsRecyclerViewAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1234">
-              <caret line="106" column="92" selection-start-line="106" selection-start-column="92" selection-end-line="106" selection-end-column="92" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Transaction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Model/Transaction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
+            <state relative-caret-position="248">
+              <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#494#495#0" expanded="true" />
-                <element signature="e#523#524#0" expanded="true" />
-                <element signature="e#553#554#0" expanded="true" />
-                <element signature="e#582#583#0" expanded="true" />
-                <element signature="e#586#587#0" expanded="true" />
-                <element signature="e#613#614#0" expanded="true" />
-                <element signature="e#642#643#0" expanded="true" />
-                <element signature="e#670#671#0" expanded="true" />
-                <element signature="e#731#732#0" expanded="true" />
-                <element signature="e#758#759#0" expanded="true" />
+                <element signature="e#747#748#0" expanded="true" />
+                <element signature="e#771#772#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TransactionFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Fragment/TransactionFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="41" column="72" selection-start-line="41" selection-start-column="72" selection-end-line="41" selection-end-column="72" />
             </state>
           </provider>
         </entry>
@@ -130,44 +157,23 @@
       <file leaf-file-name="TransactionRecyclerViewAdapter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Fragment/Adapter/TransactionRecyclerViewAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="46" column="15" selection-start-line="46" selection-start-column="15" selection-end-line="46" selection-end-column="15" />
+            <state relative-caret-position="210">
+              <caret line="40" column="52" selection-start-line="39" selection-start-column="8" selection-end-line="40" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1891#1892#0" expanded="true" />
-                <element signature="e#1933#1934#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="transaction_item.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/transaction_item.xml">
+      <file leaf-file-name="savings_item.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/savings_item.xml">
           <provider editor-type-id="android-designer2">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="category_item.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/category_item.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CategoryRecyclerViewAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Fragment/Adapter/CategoryRecyclerViewAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+            <state relative-caret-position="199">
+              <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -186,6 +192,7 @@
     <findStrings>
       <find>transactions</find>
       <find>date</find>
+      <find>savings</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -2467,14 +2474,21 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Model/Transaction.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Activity/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Model/Category.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Fragment/TransactionFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/add_transaction_activity.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Activity/AddTransaction.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Database/Database.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Fragment/Adapter/TransactionRecyclerViewAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/transaction_item.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Fragment/SavingFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Activity/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Model/Savings.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/savings_item.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Fragment/Adapter/SavingsRecyclerViewAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/add_savings_activity.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Activity/AddTransaction.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Database/Database.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/savings_fragment.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Activity/AddSavings.java" />
       </list>
     </option>
   </component>
@@ -2564,11 +2578,11 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="categ&#9;PSI&#9;JAVA://com.qburst.blaise.moneytracker.Fragment.CategoryFragment" />
+    <property name="SearchEverywhereHistoryKey" value="dat&#9;FILE&#9;file:///home/user/Documents/trcker/app/src/main/java/com/qburst/blaise/moneytracker/Database/Database.java&#10;ma&#9;FILE&#9;file:///home/user/Documents/trcker/app/src/main/java/com/qburst/blaise/moneytracker/Activity/MainActivity.java&#10;categ&#9;PSI&#9;JAVA://com.qburst.blaise.moneytracker.Fragment.CategoryFragment" />
     <property name="android.project.structure.last.selected" value="SDK Location" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
-    <property name="device.picker.selection" value="Pixel_2_API_28" />
+    <property name="device.picker.selection" value="Pixel_API_28_googleplay" />
     <property name="last_opened_file_path" value="$USER_HOME$/AndroidStudioProjects/ShamlisNote" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
     <property name="show.migrate.to.gradle.popup" value="false" />
@@ -2576,6 +2590,8 @@
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.qburst.blaise.moneytracker.Activity" />
+      <recent name="com.qburst.blaise.moneytracker.Model" />
+      <recent name="com.qburst.blaise.moneytracker.Fragment.Adapter" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -2711,21 +2727,21 @@
       <window_info id="Build Variants" side_tool="true" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="right" id="Flutter Outline" />
-      <window_info anchor="bottom" id="Logcat" visible="true" weight="0.32954547" />
+      <window_info active="true" anchor="bottom" id="Logcat" visible="true" weight="0.32954547" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
       <window_info anchor="bottom" id="Build" weight="0.32954547" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" id="Device File Explorer" side_tool="true" />
+      <window_info anchor="right" id="Device File Explorer" side_tool="true" weight="0.32954547" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" />
       <window_info id="Image Layers" />
       <window_info anchor="right" id="Capture Analysis" />
-      <window_info active="true" anchor="right" id="Preview" visible="true" weight="0.32954547" />
+      <window_info anchor="right" id="Preview" weight="0.32954547" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Terminal" weight="0.3685065" />
       <window_info id="Captures" order="2" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="right" id="Gradle" />
@@ -2778,38 +2794,12 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Fragment/CategoryFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Activity/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="142" column="42" selection-start-line="142" selection-start-column="42" selection-end-line="142" selection-end-column="42" />
-          <folding>
-            <element signature="e#1902#2307#0" expanded="true" />
-            <element signature="e#2306#2307#0" expanded="true" />
-            <element signature="e#5276#5277#0" expanded="true" />
-            <element signature="e#5312#5313#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Model/Category.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding>
-            <element signature="e#407#408#0" expanded="true" />
-            <element signature="e#432#433#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Activity/AddCategory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -2817,46 +2807,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/add_transaction_activity.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="46" column="19" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Activity/AddTransaction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-258">
-          <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3485#3486#0" expanded="true" />
-            <element signature="e#3522#3523#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Fragment/TransactionFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="41" column="72" selection-start-line="41" selection-start-column="72" selection-end-line="41" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Fragment/Adapter/CategoryRecyclerViewAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Database/Database.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1234">
-          <caret line="106" column="92" selection-start-line="106" selection-start-column="92" selection-end-line="106" selection-end-column="92" />
         </state>
       </provider>
     </entry>
@@ -2880,18 +2834,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Fragment/Adapter/TransactionRecyclerViewAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="46" column="15" selection-start-line="46" selection-start-column="15" selection-end-line="46" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1891#1892#0" expanded="true" />
-            <element signature="e#1933#1934#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/category_item.xml">
       <provider editor-type-id="android-designer2">
         <state />
@@ -2900,13 +2842,165 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Fragment/CategoryFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="45" column="5" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="45" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Fragment/Adapter/CategoryRecyclerViewAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="31" column="36" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="31" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Activity/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="70" column="42" selection-start-line="70" selection-start-column="42" selection-end-line="70" selection-end-column="42" />
+          <folding>
+            <element signature="e#2023#2628#0" expanded="true" />
+            <element signature="e#2627#2628#0" expanded="true" />
+            <element signature="e#5597#5598#0" expanded="true" />
+            <element signature="e#5633#5634#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Model/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+          <folding>
+            <element signature="e#296#297#0" expanded="true" />
+            <element signature="e#323#324#0" expanded="true" />
+            <element signature="e#354#355#0" expanded="true" />
+            <element signature="e#381#382#0" expanded="true" />
+            <element signature="e#407#408#0" expanded="true" />
+            <element signature="e#432#433#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Model/Savings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding>
+            <element signature="e#242#243#0" expanded="true" />
+            <element signature="e#267#268#0" expanded="true" />
+            <element signature="e#297#298#0" expanded="true" />
+            <element signature="e#326#327#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/transaction_item.xml">
       <provider editor-type-id="android-designer2">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+        <state relative-caret-position="253">
+          <caret line="31" column="27" selection-end-line="33" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/savings_item.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Fragment/Adapter/SavingsRecyclerViewAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#747#748#0" expanded="true" />
+            <element signature="e#771#772#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Fragment/Adapter/TransactionRecyclerViewAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="40" column="52" selection-start-line="39" selection-start-column="8" selection-end-line="40" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/add_transaction_activity.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="64" selection-start-line="18" selection-start-column="3" selection-end-line="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/add_savings_activity.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Activity/AddTransaction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="92" column="5" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Database/Database.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Fragment/SavingFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-67">
+          <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/savings_fragment.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qburst/blaise/moneytracker/Activity/AddSavings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
