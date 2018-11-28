@@ -8,7 +8,6 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.TextView;
 
 import com.qburst.blaise.moneytracker.Database.Database;
 import com.qburst.blaise.moneytracker.Model.Category;
@@ -19,7 +18,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AddSavings extends AppCompatActivity {
-    private TextView itemSelector;
     private Database db;
     private List<Category> categories;
     private Spinner spinner;
@@ -30,7 +28,6 @@ public class AddSavings extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_savings_activity);
-        itemSelector =findViewById(R.id.Item);
         db = new Database(this);
         categories = db.getCategories();
         List<String> strings= new ArrayList<>();
@@ -45,7 +42,6 @@ public class AddSavings extends AppCompatActivity {
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                itemSelector.setText(parent.getItemAtPosition(position).toString());
                 itemId = categories.get(position).getId();
             }
 

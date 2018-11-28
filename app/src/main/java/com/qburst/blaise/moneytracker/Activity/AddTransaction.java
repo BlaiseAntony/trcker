@@ -30,7 +30,6 @@ public class AddTransaction extends AppCompatActivity implements View.OnClickLis
     private int year;
     private TextView inputDate;
     private int amount;
-    private EditText itemSelector;
     private int itemId;
     private Database db;
     private List<Category> categories;
@@ -47,7 +46,6 @@ public class AddTransaction extends AppCompatActivity implements View.OnClickLis
         this.month = calendar.get(Calendar.MONTH)+1;
         this.day = calendar.get(Calendar.DAY_OF_MONTH);
         inputDate.setText(year+"/"+month+"/"+day);
-        itemSelector =findViewById(R.id.Item);
         inputDate.setOnClickListener(this);
         db = new Database(this);
         categories = db.getCategories();
@@ -63,7 +61,6 @@ public class AddTransaction extends AppCompatActivity implements View.OnClickLis
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                itemSelector.setText(parent.getItemAtPosition(position).toString());
                 itemId = categories.get(position).getId();
             }
 

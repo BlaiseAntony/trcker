@@ -16,11 +16,14 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
 import com.qburst.blaise.moneytracker.Fragment.BackupFragment;
+import com.qburst.blaise.moneytracker.Fragment.BalanceFragment;
 import com.qburst.blaise.moneytracker.Fragment.CategoryFragment;
 import com.qburst.blaise.moneytracker.Fragment.RecurringFragment;
 import com.qburst.blaise.moneytracker.Fragment.SavingFragment;
 import com.qburst.blaise.moneytracker.Fragment.TransactionFragment;
 import com.qburst.blaise.moneytracker.R;
+
+import java.util.Calendar;
 
 import pub.devrel.easypermissions.EasyPermissions;
 
@@ -29,9 +32,11 @@ public class MainActivity extends AppCompatActivity
 
     private FloatingActionButton fab;
     public static int fragment_ID;
+    public static final int BALANCES = 0;
     public static final int CATEGORY = 2;
     public static final int TRANSACTION = 1;
     public static final int SAVINGS=3;
+    public static int currentMonth;
 
     @Override
     protected void onResume() {
@@ -43,6 +48,9 @@ public class MainActivity extends AppCompatActivity
         }
         else if(fragment_ID == SAVINGS) {
             displaySavings();
+        }
+        else if(fragment_ID == BALANCES) {
+            displayBalances();
         }
         super.onResume();
     }
@@ -82,8 +90,10 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
         checkPermission();
-        displayTransaction();
-        navigationView.getMenu().findItem(R.id.nav_transactions).setChecked(true);
+        displayBalances();
+        navigationView.getMenu().findItem(R.id.nav_balances).setChecked(true);
+        Calendar calendar = Calendar.getInstance();
+        currentMonth = calendar.get(Calendar.MONTH)+1;
     }
 
     public boolean check(String[] permission) {
@@ -133,11 +143,20 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_recurrings) {
             fab.setVisibility(View.VISIBLE);
             displayRecurring();
+        } else if (id == R.id.nav_balances) {
+            fab.setVisibility(View.VISIBLE);
+            displayBalances();
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    private void displayBalances() {
+        setActionBarTitle("Balances");
+        BalanceFragment f = new BalanceFragment();
+        getSupportFragmentManager().beginTransaction().replace(R.id.container, f).commit();
     }
 
     private void displayCategories() {

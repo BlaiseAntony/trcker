@@ -4,7 +4,6 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.util.Log;
 
 import com.qburst.blaise.moneytracker.Model.Category;
 import com.qburst.blaise.moneytracker.Model.Savings;
@@ -124,10 +123,12 @@ public class Database extends SQLiteOpenHelper {
         int amount;
         Cursor cursor = db.rawQuery("select * from savings",null);
         if(cursor.moveToFirst()) {
-            id = cursor.getInt(cursor.getColumnIndex("itemId"));
-            amount = cursor.getInt(cursor.getColumnIndex("amount"));
-            Savings savings = new Savings(id, amount);
-            savingsList.add(savings);
+            do {
+                id = cursor.getInt(cursor.getColumnIndex("itemId"));
+                amount = cursor.getInt(cursor.getColumnIndex("amount"));
+                Savings savings = new Savings(id, amount);
+                savingsList.add(savings);
+            } while (cursor.moveToNext());
         }
         cursor.close();
         return savingsList;
