@@ -37,6 +37,9 @@ public class MainActivity extends AppCompatActivity
         if(fragment_ID == CATEGORY) {
             displayCategories();
         }
+        else if(fragment_ID == TRANSACTION) {
+            displayTransaction();
+        }
         super.onResume();
     }
 
@@ -53,6 +56,10 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View view) {
                 if(fragment_ID == CATEGORY) {
                     Intent intent = new Intent(MainActivity.this, AddCategory.class);
+                    startActivity(intent);
+                }
+                else if(fragment_ID == TRANSACTION) {
+                    Intent intent = new Intent(MainActivity.this, AddTransaction.class);
                     startActivity(intent);
                 }
             }

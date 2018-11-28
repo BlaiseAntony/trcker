@@ -20,6 +20,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Activity.AddCategory"/>
+        <activity android:name=".Activity.AddTransaction" />
     </application>
 
 </manifest>

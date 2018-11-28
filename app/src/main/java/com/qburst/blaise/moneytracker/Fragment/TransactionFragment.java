@@ -16,6 +16,7 @@ import com.qburst.blaise.moneytracker.Fragment.Adapter.TransactionRecyclerViewAd
 import com.qburst.blaise.moneytracker.Model.Transaction;
 import com.qburst.blaise.moneytracker.R;
 
+import java.util.Calendar;
 import java.util.List;
 
 import static com.qburst.blaise.moneytracker.Activity.MainActivity.TRANSACTION;
@@ -34,7 +35,9 @@ public class TransactionFragment extends Fragment {
         Context c = getActivity();
         RecyclerView recyclerView = view.findViewById(R.id.recycler);
         Database db = new Database(c);
-        List<Transaction> transactions = db.getTransactions();
+        Calendar calendar = Calendar.getInstance();
+        int month = calendar.get(Calendar.MONTH)+1;
+        List<Transaction> transactions = db.getTransactions(month);
         recyclerView.setLayoutManager(new LinearLayoutManager(c));
         TransactionRecyclerViewAdapter adapter = new TransactionRecyclerViewAdapter(transactions,c);
         recyclerView.setAdapter(adapter);
