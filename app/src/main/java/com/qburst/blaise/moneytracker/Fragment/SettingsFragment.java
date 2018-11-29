@@ -11,19 +11,19 @@ import android.view.ViewGroup;
 
 import com.qburst.blaise.moneytracker.R;
 
-import static com.qburst.blaise.moneytracker.Activity.MainActivity.BACKUP;
+import static com.qburst.blaise.moneytracker.Activity.MainActivity.SETTINGS;
 import static com.qburst.blaise.moneytracker.Activity.MainActivity.fragment_ID;
 
-public class BackupFragment extends Fragment {
+public class SettingsFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.backup_fragment, container, false);
+        return inflater.inflate(R.layout.settings_fragment, container, false);
     }
 
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        fragment_ID = BACKUP;
+        fragment_ID = SETTINGS;
     }
 }

@@ -6,6 +6,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import com.qburst.blaise.moneytracker.Model.Category;
+import com.qburst.blaise.moneytracker.Model.Recurring;
 import com.qburst.blaise.moneytracker.Model.Savings;
 import com.qburst.blaise.moneytracker.Model.Transaction;
 
@@ -23,6 +24,38 @@ public class Database extends SQLiteOpenHelper {
         db.execSQL("create table if not exists category(itemId integer primary key, itemName varchar(20));");
         db.execSQL("create table if not exists transactions(id integer primary key autoincrement, itemId int, year int, month int, day int, amount int , foreign key(itemId) references category(itemId));");
         db.execSQL("create table if not exists savings(id integer primary key autoincrement, itemId int, amount int, foreign key(itemId) references category(itemId));");
+        db.execSQL("create table if not exists recurrings(id integer primary key autoincrement, itemId int, year int, month int, day int, amount int, interval int, foreign key(itemId) references category(itemId));");
+    }
+
+    public void insertRecurring(Recurring recurring) {
+        SQLiteDatabase db = getWritableDatabase();
+        db.execSQL("insert into recurrings(itemId,year,month,day,amount,interval) values("+recurring.getItemId()+","+recurring.getYear()+","+recurring.getMonth()+","+recurring.getDate()+","+recurring.getAmount()+","+recurring.getInterval()+")");
+    }
+
+    public List<Recurring> getRecurrings() {
+        List<Recurring> recurringList = new ArrayList<>();
+        int itemId;
+        int date;
+        int month;
+        int year;
+        int amount;
+        int interval;
+        SQLiteDatabase db = getReadableDatabase();
+        Cursor cursor = db.rawQuery("select * from recurrings",null);
+        if(cursor.moveToFirst()) {
+            do {
+                itemId = cursor.getInt(cursor.getColumnIndex("itemId"));
+                date = cursor.getInt(cursor.getColumnIndex("day"));
+                month = cursor.getInt(cursor.getColumnIndex("month"));
+                year = cursor.getInt(cursor.getColumnIndex("year"));
+                amount = cursor.getInt(cursor.getColumnIndex("amount"));
+                interval = cursor.getInt(cursor.getColumnIndex("interval"));
+                Recurring recurring = new Recurring(itemId,year,month,date,amount,interval);
+                recurringList.add(recurring);
+            } while(cursor.moveToNext());
+        }
+        cursor.close();
+        return recurringList;
     }
 
     public void insertTransaction(Transaction transaction) {

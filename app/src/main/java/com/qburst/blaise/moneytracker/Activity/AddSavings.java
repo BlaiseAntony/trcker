@@ -32,7 +32,10 @@ public class AddSavings extends AppCompatActivity {
         categories = db.getCategories();
         List<String> strings= new ArrayList<>();
         for(int i=0;i<categories.size();i++) {
-            strings.add(categories.get(i).getName());
+            Category c = categories.get(i);
+            if(!c.isType()) {
+                strings.add(c.getName());
+            }
         }
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<>(this,
                 android.R.layout.simple_spinner_item, strings);

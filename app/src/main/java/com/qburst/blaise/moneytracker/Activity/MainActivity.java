@@ -4,8 +4,8 @@ import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -14,15 +14,21 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.qburst.blaise.moneytracker.Fragment.BackupFragment;
 import com.qburst.blaise.moneytracker.Fragment.BalanceFragment;
 import com.qburst.blaise.moneytracker.Fragment.CategoryFragment;
 import com.qburst.blaise.moneytracker.Fragment.RecurringFragment;
 import com.qburst.blaise.moneytracker.Fragment.SavingFragment;
+import com.qburst.blaise.moneytracker.Fragment.SettingsFragment;
 import com.qburst.blaise.moneytracker.Fragment.TransactionFragment;
 import com.qburst.blaise.moneytracker.R;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.OutputStream;
 import java.util.Calendar;
 
 import pub.devrel.easypermissions.EasyPermissions;
@@ -35,8 +41,13 @@ public class MainActivity extends AppCompatActivity
     public static final int BALANCES = 0;
     public static final int CATEGORY = 2;
     public static final int TRANSACTION = 1;
-    public static final int SAVINGS=3;
+    public static final int SAVINGS = 3;
+    public static final int RECURRING = 4;
+    public static final int BACKUP = 5;
+    public static final int SETTINGS = 6;
     public static int currentMonth;
+    public static int currentDay;
+    public static int currentYear;
 
     @Override
     protected void onResume() {
@@ -52,7 +63,20 @@ public class MainActivity extends AppCompatActivity
         else if(fragment_ID == BALANCES) {
             displayBalances();
         }
+        else if(fragment_ID == RECURRING) {
+            displayRecurring();
+        }
+        else if(fragment_ID == BACKUP) {
+            importExport();
+        }
+        else if(fragment_ID == SETTINGS) {
+            displaySettings();
+        }
         super.onResume();
+        Calendar calendar = Calendar.getInstance();
+        currentMonth = calendar.get(Calendar.MONTH)+1;
+        currentDay = calendar.get(Calendar.DAY_OF_MONTH);
+        currentYear = calendar.get(Calendar.YEAR);
     }
 
     @Override
@@ -78,6 +102,14 @@ public class MainActivity extends AppCompatActivity
                     Intent intent = new Intent(MainActivity.this,AddSavings.class);
                     startActivity(intent);
                 }
+                else if(fragment_ID == RECURRING) {
+                    Intent intent = new Intent(MainActivity.this, AddRecurrings.class);
+                    startActivity(intent);
+                }
+                else if(fragment_ID == BALANCES) {
+                    Intent intent = new Intent(MainActivity.this, AddTransaction.class);
+                    startActivity(intent);
+                }
             }
         });
 
@@ -92,8 +124,6 @@ public class MainActivity extends AppCompatActivity
         checkPermission();
         displayBalances();
         navigationView.getMenu().findItem(R.id.nav_balances).setChecked(true);
-        Calendar calendar = Calendar.getInstance();
-        currentMonth = calendar.get(Calendar.MONTH)+1;
     }
 
     public boolean check(String[] permission) {
@@ -172,6 +202,9 @@ public class MainActivity extends AppCompatActivity
     }
 
     private void displaySettings() {
+        setActionBarTitle("Settings");
+        SettingsFragment f = new SettingsFragment();
+        getSupportFragmentManager().beginTransaction().replace(R.id.container,f).commit();
     }
 
     public void setActionBarTitle(String title) {
@@ -195,4 +228,60 @@ public class MainActivity extends AppCompatActivity
         BackupFragment f= new BackupFragment();
         getSupportFragmentManager().beginTransaction().replace(R.id.container,f).commit();
     }
+
+    public void backup(View view) {
+        try {
+            String inFileName = "/data/data/com.qburst.blaise.moneytracker/databases/db";
+            File dbFile = new File(inFileName);
+            FileInputStream fis = new FileInputStream(dbFile);
+            String path = Environment.getExternalStorageDirectory().getAbsolutePath() + "/Money Tracker/Backup";
+            File dir = new File(path);
+            if (!dir.exists()) dir.mkdirs();
+            //String outFileName = path + "BCKUP"+currentYear+"/"+currentMonth+"/"+currentDay;
+            String outFileName = path + "/note";
+            OutputStream output = new FileOutputStream(outFileName,false);
+
+            byte[] buffer = new byte[1024];
+            int length;
+            while ((length = fis.read(buffer)) > 0) {
+                output.write(buffer, 0, length);
+            }
+            output.flush();
+            output.close();
+            fis.close();
+            Toast.makeText(this,"Successfully backed up the data",Toast.LENGTH_SHORT).show();
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+            Toast.makeText(this,"Backup failed",Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public void restore(View view) {
+        try {
+            String inFileName = Environment.getExternalStorageDirectory().getAbsolutePath() + "/Money Tracker/Backup/note";
+            File dbFile = new File(inFileName);
+            FileInputStream fis = new FileInputStream(dbFile);
+            String path = "/data/data/com.qburst.blaise.moneytracker/databases";
+            File dir = new File(path);
+            if (!dir.exists()) dir.mkdirs();
+            String outFileName = path + "/db";
+            OutputStream output = new FileOutputStream(outFileName,false);
+
+            byte[] buffer = new byte[1024];
+            int length;
+            while ((length = fis.read(buffer)) > 0) {
+                output.write(buffer, 0, length);
+            }
+            output.flush();
+            output.close();
+            fis.close();
+            Toast.makeText(this,"Successfully restored the data",Toast.LENGTH_SHORT).show();
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+            Toast.makeText(this,"Restore failed",Toast.LENGTH_SHORT).show();
+        }
+    }
+
 }
